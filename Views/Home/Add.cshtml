@@ -1,0 +1,35 @@
+﻿@model List<MvcApplication1.Models.Book>
+    @{
+    ViewBag.Title = "Add";
+}
+
+<h1>Add</h1>
+<table>
+    <tr>
+        <td>Book Id</td>
+        <td>Book ISBN</td>
+        <td>Book Name</td>
+        <td>Quantity</td>
+        <td>Price</td>
+        <td>Fine</td>
+        <td>Status</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.ISBN</td>
+            <td>@x.Name</td>
+            <td>@x.Quantity</td>
+            <td>@x.Price</td>
+            <td>@x.Fine</td>
+            <td>@x.Status</td>
+            <td><a href="/Home/Edit/@x.Id">Edit</a></td>
+            <td><a href="/Home/Delete/@x.Id">Delete</a></td>
+        </tr>
+    }
+
+</table>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

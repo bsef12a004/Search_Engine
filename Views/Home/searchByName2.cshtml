@@ -1,0 +1,44 @@
+﻿@model MvcApplication1.Models.Book
+<!DOCTYPE html>
+
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+<h1>Search Results:</h1>
+<br />
+<table>
+
+    <tr>
+
+        <td>Book ISBN</td>
+        <td> </td>
+        <td>Book Name</td>
+        <td> </td>
+        <td>Quantity</td>
+        <td> </td>
+        <td>Fine</td>
+        <td> </td>
+        <td>Price</td>
+        <td></td>
+        <td>Status</td>
+
+    </tr>
+
+
+    <tr>
+
+        <td>@Model.ISBN</td>
+        <td> </td>
+        <td>@Model.Name</td>
+        <td> </td>
+        <td>@Model.Quantity</td>
+        <td> </td>
+        <td>@Model.Fine</td>
+        <td> </td>
+        <td>@Model.Price</td>
+        <td> </td>
+        <td>@Model.Status</td>
+
+    </tr>
+
+</table>
+
+<br/><br /><br /><br /><br /><br /><br /><br /><br /><br />

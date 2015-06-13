@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Library Management System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet" type="text/css">
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="~/Content/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
+
+</head>
+<body>
+    <div class="btm_border">
+        <div class="h_bg">
+            <div class="wrap">
+                <div class="header">
+                    <div class="logo">
+                        <h1><a href="index.html"><img src="~/Images/logo.png" alt=""></a></h1>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a class="facebook" href="#" target="_blank"> </a></li>
+                            <li><a class="twitter" href="#" target="_blank"></a></li>
+                            <li><a class="googleplus" href="#" target="_blank"></a></li>
+                            <li><a class="pinterest" href="#" target="_blank"></a></li>
+                            <li><a class="dribbble" href="#" target="_blank"></a></li>
+                            <li><a class="vimeo" href="#" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class='h_btm'>
+                    <div class='cssmenu'>
+                        <ul>
+                            <li><a href="/Home/index"><span>Home</span></a></li>
+
+                            <li class="active"><a href="/Home/about"><span>About</span></a></li>
+
+                            <li><a href="/Home/staff"><span>Staff</span></a></li>
+
+                            <li class="has-sub"><a href="/Home/service"><span>Services</span></a></li>
+
+                            <li class="last"><a href="/Home/contact"><span>Contact</span></a></li>
+
+                            <li><a href="/Home/books"><span>Famous Books</span></a></li>
+
+                            <li><a href="/Home/searchBook"><span>Search Books</span></a></li>
+
+                            <li><a href="/Home/helloWorld"><span>Add Book</span></a></li>
+   
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+    
+    <!--footer1-->
+    <div class="ftr-bg">
+        <div class="wrap">
+            <div class="footer">
+                <div class="copy">
+                    <p class="w3-link">© All Rights Reserved | Design by Mahmood Humayun</a></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

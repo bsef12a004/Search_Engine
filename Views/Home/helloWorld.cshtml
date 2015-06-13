@@ -1,0 +1,37 @@
+﻿@model MvcApplication1.Models.Book
+<!DOCTYPE HTML>
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+<br/>
+<div>
+
+<h1 style = "color:Black;font-size:40px;text-align:center;">Add Book</h1><br/><br/>
+
+
+    @using (@Html.BeginForm("Save", "Home", FormMethod.Post))
+    { 
+        @Html.Label("Book ISBN:", new { @class = "inputs" , @for="Book-ISBN"})
+        @Html.TextBoxFor(y => y.ISBN, null, new { @class = "form-control", @id = "ISBN"})
+        <br /><br />
+       
+        @Html.Label("Book Name:", new { @class = "inputs" , @for="Book-Name"})
+        @Html.TextBoxFor(y => y.Name, null, new { @class = "form-control", @id = "Name"})
+        <br /><br />
+        @Html.Label("Quantity:", new { @class = "inputs" , @for="Quantity"})
+        @Html.TextBoxFor(y => y.Quantity, null, new { @class = "form-control", @id = "Quantity"})
+        <br /><br />
+        @Html.Label("Price:", new { @class = "inputs" , @for="Price"})
+        @Html.TextBoxFor(y => y.Price, null, new { @class = "form-control", @id = "Price"})
+        <br /><br />
+        @Html.Label("Fine Per Day:", new { @class = "inputs" , @for="Fine Per Day"})
+        @Html.TextBoxFor(y => y.Fine, null, new { @class = "form-control", @id = "Fine"})
+        <br /><br />
+        @Html.Label("Status:", new { @class = "inputs" , @for="Status"})
+        @Html.TextBoxFor(y => y.Status, null, new { @class = "form-control", @id = "Status"})
+        <br /><br />
+        <input style="margin-left:13%" type="submit" name="addbtn" value="Add Book" /><br />
+
+    }
+</div>
+
+
+<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /><br />
